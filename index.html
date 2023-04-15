@@ -1,0 +1,262 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Gta Garage">
+        <meta name="auther" content="WispyDutchess">
+        <meta name="keywords" content="GTA-Cars">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Car Finder</title>
+        <link rel="icon" type="image/x-icon" href="./Images/favicon_io/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/syntax.css">
+        <script src="JS/Search.js" defer></script>
+        <script src="JS/Fetch.js" defer></script>
+        <script src="JS/collapse.js" defer></script>
+        <script src="JS/Return.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <header id="head">
+                <img src="https://fontmeme.com/permalink/230410/e8595ed7e4e7a82853989a38447cb580.png" alt="grand-theft-auto-font" >
+                <br>
+                <div>
+                    <a href="Search.html">Find A Car 🔍</a>
+                </div>
+            </header>
+            <main>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top ↑</button>
+
+                <template id="outerTemplate" >
+                    <div class="items">
+                        <div>
+                            <button type="button" class="collapsible">
+                                <div class="addressContainer">
+                                    <h1 class="address" data-address></h1>
+                                    <img class="address-image" data-addressImage alt="Photo of Address">
+                                </div>
+                            </button>
+                            <div class="content" >
+                                <div class="contentGrid" id="inner-template-container">
+        
+                                </div>
+                            </div>
+                        </div>    
+                    </div>        
+                </template>
+        
+                <template id="innerTemplate">
+                    <div class="innerTemplateDataContainer">
+                        <span class="info">
+                            <span> Model:</span>
+                            <br>
+                            <span class="vehicle" data-make></span>
+                            <br>
+                            <span>Location:</span>
+                            <br>
+                            <span class="vehicle" data-unit></span>
+                            <br>
+                            <span>Tags:</span>
+                            <br>
+                            <span class="vehicle" data-theme></span>
+                            <br>
+                            <span>Colour:</span>
+                            <br>
+                            <span class="vehicle" data-color></span>
+                            <br>
+                            <span>Notes:</span>
+                            <br>
+                            <span class="vehicle" data-notes></span>      
+                            <br>
+                            <br>
+                        </span>              
+                        <img class="vehicle-image" data-makeImage alt="Image of Car">
+                    </div>
+                </template>
+
+
+                <div class="Placement">
+
+                </div>
+
+
+                <!-- <div class="items">
+                    <div>
+                        <button type="button" class="collapsible">
+                            <h2>Address</h2>
+                            <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (638).png" alt="Photo of Garage">
+                        </button>
+                        <div class="content">
+                            <div>
+                                <h3>mgb gt</h3>
+                                <ul>
+                                    <li>Class: Classic Sports</li>
+                                    <li>Colour: Blue</li>
+                                    <li>Note: Won in fight with putins penguines</li>
+                                </ul>
+                                <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (628).png" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>chevy</h3>
+                                <ul>
+                                    <li>Class: American Muscle</li>
+                                    <li>Colour: red</li>
+                                    <li>Note: old</li>
+                                </ul>
+                                <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (629).png" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Mercedes</h3>
+                                <ul>
+                                    <li>Class: saloon</li>
+                                    <li>Colour: yellow</li>
+                                    <li>Note: has no keys</li>
+                                </ul>
+                                <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (630).png" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Aston Martin</h3>
+                                <ul>
+                                    <li>Class: Classic Sports</li>
+                                    <li>Colour: Pearl Pink</li>
+                                    <li>Note: shaken not sturd
+                                    </li>
+                                </ul>
+                                <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (631).png" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Toyota RAV4</h3>
+                                <ul>
+                                    <li>Class: 4 by 4</li>
+                                    <li>Colour: Deep Orange</li>
+                                    <li>Note: stand firmly
+                                    </li>
+                                </ul>
+                                <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (632).png" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Bmw 750I XDRIVE</h3>
+                                <ul>
+                                    <li>Class: suv</li>
+                                    <li>Colour: Light Pink</li>
+                                    <li>Note: th col
+                                    </li>
+                                </ul>
+                                <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (633).png" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Jaguar XF</h3>
+                                <ul>
+                                    <li>Class: Sports</li>
+                                    <li>Colour: Pastel Blue</li>
+                                    <li>Note: strength
+                                    </li>
+                                </ul>
+                                <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (634).png" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Harley Davidson FLSTF FAT BOY</h3>
+                                <ul>
+                                    <li>Class: motorcycle</li>
+                                    <li>Colour: Melon Yellow</li>
+                                    <li>Note: to success
+                                    </li>
+                                </ul>
+                                <img src="Images/GTA-Cars/Del-Perro-Hts/Screenshot (635).png" alt="Image of Car">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <button type="button" class="collapsible">
+                            <h2>Garage name</h2>
+                            <img src="" alt="Photo of Garage">
+                        </button>
+                        <div class="content">
+                            <div>
+                                <h3>Mazda MPV</h3>
+                                <ul>
+                                    <li>Class: suv</li>
+                                    <li>Colour: Salmon Pink</li>
+                                    <li>Note: your passport
+                                    </li>
+                                </ul>
+                                <img src="" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Mazda 3</h3>
+                                <ul>
+                                    <li>Class: hatchback</li>
+                                    <li>Colour: Violet Blue</li>
+                                    <li>Note: marry your lover
+                                    </li>
+                                </ul>
+                                <img src="" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Porsche 911</h3>
+                                <ul>
+                                    <li>Class: Classic Sports</li>
+                                    <li>Colour: Light Green</li>
+                                    <li>Note: wander
+                                    </li>
+                                </ul>
+                                <img src="" alt="Image of Car">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <button type="button" class="collapsible">
+                            <h2>Pegasus</h2>
+                            <img src="" alt="Photo of Garage">
+                        </button>
+                        <div class="content">
+                            <div>
+                                <h3>Peugeot 607</h3>
+                                <ul>
+                                    <li>Class: hot hatch</li>
+                                    <li>Colour: Sun Yellow</li>
+                                    <li>Note: off-campus museum
+                                    </li>
+                                </ul>
+                                <img src="" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Ford EXPEDITION</h3>
+                                <ul>
+                                    <li>Class: ute</li>
+                                    <li>Colour: Umbra Grey</li>
+                                    <li>Note: garden
+                                    </li>
+                                </ul>
+                                <img src="" alt="Image of Car">
+                            </div>
+                            <div>
+                                <h3>Audi RS7</h3>
+                                <ul>
+                                    <li>Class: coupe</li>
+                                    <li>Colour: Ocean Blue</li>
+                                    <li>Note: a bubble
+                                    </li>
+                                </ul>
+                                <img src="" alt="Image of Car">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <img src="" id="rainbow" alt=""> -->
+
+            </main>
+
+            <footer>
+                Produced by WispyDutchess <br>
+                &copy WispyDutchess 2023
+            </footer>
+            
+            <!-- <script type="module" src="JS/Script.js"></script> -->
+        </div>
+    </body>
+</html>

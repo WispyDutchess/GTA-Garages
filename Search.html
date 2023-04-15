@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Gta Garage">
+        <meta name="auther" content="WispyDutchess">
+        <meta name="keywords" content="GTA-Cars">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Car Finder</title>
+        <link rel="icon" type="image/x-icon" href="./Images/favicon_io/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/syntax.css">
+        <script src="JS/Search.js" defer></script>
+        <!-- <script src="JS/Fetch.js" defer></script> -->
+        <script src="JS/Return.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top ↑</button>
+
+            <header>
+                <a href="index.html">
+
+                    <img src="https://fontmeme.com/permalink/230410/e8595ed7e4e7a82853989a38447cb580.png" alt="grand-theft-auto-font" >
+                </a>
+            </header>
+            <main>
+                <div class="search-wrapper">
+                    <label for="search">Find a Car 🔍</label>
+                    <input type="search" id="search" placeholder="Enter a vehicle.." data-search> 
+                </div>
+
+                <div class="user-cards" data-user-cards-container>
+
+
+
+    <!-- remove below -->
+
+                    <!-- <div class="card">
+                        <div class="header">name of car</div>
+                        <div class="body">colour</div>
+                            <img src="Images/GTA Cars/Del Perro Hts/Screenshot (628).png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="header">name of car</div>
+                        <div class="body">colour</div>
+                        <img class="addressImage" id="addressImage" data-addressImage src=""></img>
+                    </div>
+                    <div class="card">
+                        <div class="header">name of car</div>
+                        <div class="body">colour</div>
+                        <div class="foot">Pic</div>
+                    </div> -->
+
+    <!-- remove above -->
+
+
+                    <template data-user-template>
+                        <div class="layout">
+                            <div class="card" data-id>
+                                <div class="container-container">
+                                    <div class="text-container">
+                                        <div class="make" data-make></div>
+                                        <div class="address" data-address></div>
+                                        <div class="colour" data-colour></div>
+                                        <div class="use" data-use></div>
+                                        <div class="note" data-note></div>
+                                    </div>
+                                    <img class="addressImage" data-addressImage src=""></img>
+                                </div>
+                                <img class="makeImage" data-makeImage src=""></img>
+                            </div>
+                        </div>
+                    </template>                
+                </div>
+
+
+                <!-- <button id="image">Next</button>
+                <br>
+
+                <img id="boxy" src="Images/GTA-Cars/Office-2/Screenshot5.png" alt="Unable to view image"></img>
+
+
+
+                <br><br><br>
+
+
+
+
+
+                <button id="colour">Change Colour</button>
+                <div id="changeMeColour" style="background: red;"></div>
+                <br><br>
+
+
+
+
+                <button id="joke" onclick="tellJoke()"> Tell me a Joke</button> -->
+
+            </main>
+
+            <footer>
+                Produced by WispyDutchess <br>
+                &copy WispyDutchess 2023
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Location Database</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <header>
+      <h1>Car Location Database</h1>
+    </header>
+    <main>
+        <!-- <div id="accordion"></div>
+            <template id="address-template">
+                <section>
+                <header>
+                    <img src="" alt="Address image">
+                    <h2></h2>
+                </header>
+                <div>
+                    <ul> -->
+                    <!-- This is where the vehicle list items will go -->
+                    <!-- </ul>
+                </div>
+                </section>
+            </template> -->
+
+
+            <!-- Me -->
+        <!-- <template id="address-template">
+            <div class="items">
+                <div>
+                    <button type="button" class="collapsible">
+                        <div data-address></div>
+                        <img data-addressImage alt="Photo of Address">
+                    </button>
+                    <template class="content-template">
+                        <div class="content">
+                            <div data-make></div>
+                            <div data-colour></div>
+                            <div data-use></div>
+                            <div data-note></div>
+                            <img data-makeImage alt="Image of Car">
+                        </div>
+                    </template>
+                </div>    
+            </div>        
+        </template> -->
+
+        <!-- <div class="user-cards" data-user-collapse-container>
+            <template id="template1" >
+                <div class="items">
+                    <div>
+                        <button type="button" class="collapsible">
+                            <div class="address" data-address>address</div>
+                            <img class="address-image" data-addressImage alt="Photo of Address">
+                        </button>
+                        <div data-user-content-container>
+                            <template class="content-template" id="template2">
+                                <div class="content">
+                                    <div class="vehicle" data-make>ham</div>
+                                    <div class="vehicle" data-theme>cheese</div>
+                                    <div class="vehicle" data-color>burg</div>
+                                    <div class="vehicle" data-notes></div>
+                                    <img class="vehicle-image" data-makeImage alt="Image of Car">
+                                </div>
+                            </template>
+                        </div>
+                    </div>    
+                </div>        
+            </template>
+        </div> -->
+
+        <div class="user-cards" data-user-collapse-container>
+
+        </div>
+
+        <template id="outerTemplate" >
+            <div class="items">
+                <div>
+                    <button type="button" class="collapsible">
+                        <div class="addressContainer">
+                            <h1 class="address" data-address></h1>
+                            <img class="address-image" data-addressImage alt="Photo of Address">
+                        </div>
+                    </button>
+                    <div class="content" >
+                        <div class="contentGrid" id="inner-template-container">
+
+                        </div>
+                    </div>
+                </div>    
+            </div>        
+        </template>
+
+        <template id="innerTemplate">
+            <div class="innerTemplateDataContainer">
+                <span class="info">
+                    <span> Model:</span>
+                    <br>
+                    <span class="vehicle" data-make></span>
+                    <br>
+                    <span>Location:</span>
+                    <br>
+                    <span class="vehicle" data-unit></span>
+                    <br>
+                    <span>Tags:</span>
+                    <br>
+                    <span class="vehicle" data-theme></span>
+                    <br>
+                    <span>Colour:</span>
+                    <br>
+                    <span class="vehicle" data-color></span>
+                    <br>
+                    <span>Notes:</span>
+                    <br>
+                    <span class="vehicle" data-notes></span>      
+                    <br>
+                    <br>
+                </span>              
+                <img class="vehicle-image" data-makeImage alt="Image of Car">
+            </div>
+        </template>
+
+        
+
+
+      <a href="../../index.html">home page</a>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

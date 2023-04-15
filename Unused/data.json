@@ -1,0 +1,48 @@
+{
+    "data": [
+      {
+        "address": "123 Main St",
+        "addressImg": "Images/GTA-Cars/Pegasus/Screenshot (0).png",
+        "vehicles": [
+          {
+            "id": 1,
+            "make": "Toyota",
+            "theme": "Corolla",
+            "color": "Red",
+            "notes": "Scratches on the right side",
+            "vehicleImg": "Images/GTA-Cars/Pegasus/Screenshot (1).png"
+          },
+          {
+            "id": 2,
+            "make": "Honda",
+            "theme": "Civic",
+            "color": "Blue",
+            "notes": "Missing front bumper",
+            "vehicleImg": "Images/GTA-Cars/Pegasus/Screenshot (2).png"
+          }
+        ]
+      },
+      {
+        "address": "456 Oak St",
+        "addressImg": "Images/GTA-Cars/Pegasus/Screenshot (0).png",
+        "vehicles": [
+          {
+            "id": 3,
+            "make": "Ford",
+            "theme": "F150",
+            "color": "Black",
+            "notes": "Broken rear window",
+            "vehicleImg": "Images/GTA-Cars/Pegasus/Screenshot (3).png"
+          },
+          {
+            "id": 4,
+            "make": "Chevrolet",
+            "theme": "Silverado",
+            "color": "White",
+            "notes": "Dented tailgate",
+            "vehicleImg": "Images/GTA-Cars/Pegasus/Screenshot (4).png"
+          }
+        ]
+      }
+    ]
+  }
